@@ -1,0 +1,348 @@
+/* =========================
+   PALETA
+   ========================= */
+
+/*
+rgb(212, 221, 226)
+rgb(245, 238, 238)
+rgb(162, 162, 162)
+rgb(92, 126, 143)
+Caracter hamburguesa ≡
+*/
+
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgb(212, 221, 226);
+    color: rgb(92, 126, 143);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: rgb(245, 238, 238);
+    color: rgb(92, 126, 143);
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo img {
+    width: 100px;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.link-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    color: rgb(92, 126, 143);
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.link-menu:visited {
+    color: rgba(150, 147, 147, 0.623);
+}
+
+.link-menu:hover {
+    color: rgba(150, 147, 147, 0.623);
+    background-color: rgb(212, 221, 226);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.link-menu:active {
+    color: rgba(150, 147, 147, 0.623);
+    text-decoration: underline;
+}
+
+.hamburguesa {
+    color: rgba(150, 147, 147, 0.623);
+    border: 0.5px solid rgba(150, 147, 147, 0.623);
+
+}
+
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main h1 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    background-color: rgb(92, 126, 143);
+    color: rgb(245, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    color: rgb(92, 126, 143);
+    font-weight: 400;
+    background-color: rgb(212, 221, 226);
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(162, 162, 162);
+}
+
+.hero a:visited {
+    color: rgba(150, 147, 147, 0.623);
+}
+
+.hero a:hover {
+    color: rgb(76, 120, 143);
+    background-color: rgba(144, 145, 146, 0.582);
+    border-radius: 5px;
+}
+
+.hero a:active {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: rgb(245, 238, 238);
+    color: rgb(92, 126, 143);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    list-style: none;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+
+    gap: 0.3rem;
+}
+
+footer li a:visited {
+    color: rgba(150, 147, 147, 0.623);
+}
+
+footer li a:hover {
+    color: rgba(150, 147, 147, 0.623);
+    background-color: rgb(212, 221, 226);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+footer li a:active {
+    color: rgba(150, 147, 147, 0.623);
+    text-decoration: underline;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(92, 126, 143);
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+
+/* =========================
+   FIGURES
+   ========================= */
+
+figure {
+    background-color: rgb(245, 238, 238);
+    color: rgb(92, 126, 143);
+
+    padding: 2rem;
+
+    border-radius: 5px;
+    border: 1px solid rgb(162, 162, 162);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+figure img {
+
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+figure h2 {
+    margin: 0.5rem;
+}
+
+figcaption {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/* =========================
+   GALERÍA
+   ========================= */
+
+.nosotros {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.nosotros figure {
+    margin: 0;
+}
+
+.nosotros img {
+    width: 100%;
+    max-width: 100%;
+
+    object-fit: cover;
+}
+
+.escritorio {
+    display: none;
+}
+
+.movil {
+    display: block;
+}
+
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+@media (min-width: 768px) {
+
+    .nosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px 280px;
+        grid-template-areas:
+            "vertical cuadrada1"
+            "vertical cuadrada2"
+            "horizontal horizontal";
+    }
+
+    .escritorio {
+        display: block;
+    }
+
+    .movil {
+        display: none;
+    }
+
+    .foto-vertical {
+        grid-area: vertical;
+    }
+
+    .foto-cuadrada1 {
+        grid-area: cuadrada1;
+    }
+
+    .foto-cuadrada2 {
+        grid-area: cuadrada2;
+    }
+
+    .foto-horizontal {
+        grid-area: horizontal;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .nosotros {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 280px 280px;
+        grid-template-areas:
+            "vertical cuadrada1 cuadrada2"
+            "horizontal horizontal horizontal";
+    }
+
+    .nosotros figure:focus {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
+    }
+
+  
+
+}
