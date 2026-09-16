@@ -225,9 +225,7 @@ footer a {
 figure {
     background-color: rgb(245, 238, 238);
     color: rgb(92, 126, 143);
-
-    padding: 2rem;
-
+    
     border-radius: 5px;
     border: 1px solid rgb(162, 162, 162);
 
@@ -244,11 +242,7 @@ figure img {
     display: block;
     border-radius: 5px;
     object-fit: cover;
-}
-
-figure h2 {
-    margin: 0.5rem;
-}
+   }
 
 figcaption {
     font-size: 1rem;
