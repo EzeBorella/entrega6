@@ -2,69 +2,272 @@
 <html lang="es">
 
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Servicios</title>
+    <title>Historia | Taller Integral Multimarca</title>
+
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
 
     <!-- CSS propio -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-</head>
-
 <body>
+
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg">
+
             <div class="container-fluid">
 
-                <!--Logo-->
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpeg" alt="Logo del taller"></a>
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.jpeg" alt="Logo del taller">
+                </a>
 
-                <!-- boton hamburguesa-->
+                <!-- Botón hamburguesa -->
                 <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    ≡
+                    aria-label="Abrir menú">
+                    ☰
                 </button>
-                <!--Menu-->
+
+                <!-- Menú -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link link-menu" href="../index.html">INICIO</a>
-                        <a class="nav-link link-menu" href="../pages/servicios.html">SERVICIOS</a>
-                        <a class="nav-link link-menu" href="../pages/nosotros.html">NOSOTROS</a>
-                        <a class="nav-link link-menu" href="../pages/contacto.html">CONTACTO</a>
-                        <a class="nav-link link-menu" href="#">HISTORIA</a>
+
+                        <a class="nav-link link-menu" href="../index.html">
+                            INICIO
+                        </a>
+
+                        <a class="nav-link link-menu" href="./servicios.html">
+                            SERVICIOS
+                        </a>
+
+                        <a class="nav-link link-menu" href="./nosotros.html">
+                            NOSOTROS
+                        </a>
+
+                        <a class="nav-link link-menu" href="./contacto.html">
+                            CONTACTO
+                        </a>
+
+                        <a class="nav-link link-menu" href="./historia.html" aria-current="page">
+                            HISTORIA
+                        </a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </nav>
     </header>
-    <main>
-        <h1>SERVICIOS</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, porro. Provident, animi! Cum ipsa fuga non
-            doloremque repellat enim eligendi sint reprehenderit eius quisquam necessitatibus fugiat repudiandae itaque
-            laboriosam a praesentium incidunt, dolorem consequuntur minima rem minus beatae! Esse provident, voluptas
-            nostrum ex numquam dolore architecto maxime blanditiis voluptatem voluptatum.</p>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+
+        <section class="historia">
+
+        <div class="accordion" id="accordionHistoria">
+
+    <!-- INICIOS -->
+    <div class="accordion-item">
+
+        <h2 class="accordion-header">
+            <button class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#inicio"
+                aria-expanded="true"
+                aria-controls="inicio">
+
+                Nuestros comienzos
+
+            </button>
+        </h2>
+
+        <div id="inicio"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionHistoria">
+
+            <div class="accordion-body">
+
+                Nuestro taller nació con el objetivo de brindar
+                un servicio integral y de confianza para nuestros clientes.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CRECIMIENTO -->
+    <div class="accordion-item">
+
+        <h2 class="accordion-header">
+
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#crecimiento"
+                aria-expanded="false"
+                aria-controls="crecimiento">
+
+                Crecimiento del taller
+
+            </button>
+
+        </h2>
+
+        <div id="crecimiento"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionHistoria">
+
+            <div class="accordion-body">
+
+                Con el paso de los años incorporamos nuevas herramientas,
+                tecnología y servicios para poder atender las diferentes
+                necesidades de nuestros clientes.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ACTUALIDAD -->
+    <div class="accordion-item">
+
+        <h2 class="accordion-header">
+
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#actualidad"
+                aria-expanded="false"
+                aria-controls="actualidad">
+
+                El taller en la actualidad
+
+            </button>
+
+        </h2>
+
+        <div id="actualidad"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionHistoria">
+
+            <div class="accordion-body">
+
+                Actualmente trabajamos con diferentes marcas y ofrecemos
+                atención personalizada, buscando que cada cliente encuentre
+                en nuestro taller un lugar de confianza para el cuidado
+                y mantenimiento de su vehículo.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/historia1.jfif" class="d-block w-100" alt="historia1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/historia2.jfif" class="d-block w-100" alt="historia2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/historia3.jfif" class="d-block w-100" alt="historia3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/historia4.jfif" class="d-block w-100" alt="historia4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/hmoderno1.jfif" class="d-block w-100" alt="historia5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/hmoderno2.jfif" class="d-block w-100" alt="historia6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/hmoderno3.jfif" class="d-block w-100" alt="historia7">
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
     </main>
+
+
+    <!-- FOOTER -->
     <footer>
+
         <h2>Todos los derechos reservados</h2>
+
         <ul>
-            <li><img src="../img/facebook.jfif" alt=""><a href="https://www.facebook.com">FACEBOOK</a></li>
-            <li><img src="../img/instagram.jfif" alt=""><a href="https://www.instagram.com">INSTAGRAM</a></li>
-            <li><img src="../img/X.png" alt=""><a href="https://www.x.com">X</a></li>
+
+            <li>
+                <img src="../img/facebook.jfif" alt="Facebook">
+
+                <a href="https://www.facebook.com">
+                    FACEBOOK
+                </a>
+            </li>
+
+            <li>
+                <img src="../img/instagram.jfif" alt="Instagram">
+
+                <a href="https://www.instagram.com">
+                    INSTAGRAM
+                </a>
+            </li>
+
+            <li>
+                <img src="../img/X.png" alt="X">
+
+                <a href="https://www.x.com">
+                    X
+                </a>
+            </li>
+
         </ul>
+
     </footer>
-    <!-- script de bootstrap -->
+
+
+    <!-- JavaScript de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
 </body>
 
 </html>

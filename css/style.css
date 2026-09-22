@@ -225,7 +225,7 @@ footer a {
 figure {
     background-color: rgb(245, 238, 238);
     color: rgb(92, 126, 143);
-    
+
     border-radius: 5px;
     border: 1px solid rgb(162, 162, 162);
 
@@ -242,7 +242,7 @@ figure img {
     display: block;
     border-radius: 5px;
     object-fit: cover;
-   }
+}
 
 figcaption {
     font-size: 1rem;
@@ -281,8 +281,175 @@ figcaption {
 
 
 /* =========================
+   HISTORIA
+   ========================= */
+.historia {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding: 2.5rem;
+
+}
+
+.historia h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.historia p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.accordion {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    background-color: rgb(245, 238, 238);
+    border: 1px solid rgb(162, 162, 162);
+}
+
+.accordion-button {
+    background-color: rgb(245, 238, 238);
+    color: rgb(92, 126, 143);
+
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(92, 126, 143);
+    color: rgb(245, 238, 238);
+
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
+}
+
+.accordion-body {
+    background-color: rgb(245, 238, 238);
+    color: rgb(92, 126, 143);
+
+    line-height: 1.7;
+}
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+.contacto {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.contacto form {
+    background-color: rgb(245, 238, 238);
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.contacto fieldset {
+    border: none;
+}
+
+.contacto legend {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.contacto label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 0.7rem;
+
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 5px;
+
+    background-color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+    outline: none;
+    border-color: rgb(92, 126, 143);
+    box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
+}
+
+.contacto textarea {
+    resize: vertical;
+}
+
+.contacto button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(92, 126, 143);
+    color: rgb(245, 238, 238);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: rgb(76, 105, 120);
+    transform: translateY(-2px);
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 500px;
+
+    border: 0;
+    border-radius: 10px;
+}
+
+
+/* =========================
    MEDIA QUERIES
    ========================= */
+
+@media (max-width: 767px) {
+
+    .contacto {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .contacto form {
+        padding: 1.5rem;
+    }
+
+    .mapa iframe {
+        height: 350px;
+    }
+
+}
 
 @media (min-width: 768px) {
 
@@ -337,6 +504,6 @@ figcaption {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
     }
 
-  
+
 
 }
