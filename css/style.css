@@ -1,540 +1,517 @@
-/* =========================
-   PALETA
-   ========================= */
-
-/*
-rgb(212, 221, 226)
-rgb(245, 238, 238)
-rgb(162, 162, 162)
-rgb(92, 126, 143)
-Caracter hamburguesa ≡
-*/
-
-
-/* =========================
-   RESET
-   ========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+  background-color: rgb(245, 238, 238);
+  color: rgb(92, 126, 143);
 }
 
+.link-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  color: rgb(92, 126, 143);
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
-/* =========================
-   BODY
-   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    background-color: rgb(212, 221, 226);
-    color: rgb(92, 126, 143);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: rgb(212, 221, 226);
+  color: rgb(92, 126, 143);
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
-
-/* =========================
-   HEADER
-   ========================= */
-
-header {
-    background-color: rgb(245, 238, 238);
-    color: rgb(92, 126, 143);
-}
-
-
-/* =========================
-   LOGO
-   ========================= */
 
 .logo img {
-    width: 90px;
-}
-
-
-/* =========================
-   NAVBAR
-   ========================= */
-
-.link-menu {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    color: rgb(92, 126, 143);
-    font-weight: 400;
-    text-decoration: none;
-    transition: all 0.3s;
+  width: 90px;
 }
 
 .link-menu:visited {
-    color: rgba(150, 147, 147, 0.623);
+  color: rgba(150, 147, 147, 0.623);
 }
 
 .link-menu:hover {
-    color: rgba(150, 147, 147, 0.623);
-    background-color: rgb(212, 221, 226);
-    border-radius: 5px;
-    padding: 0.5rem;
+  color: rgba(150, 147, 147, 0.623);
+  background-color: rgb(212, 221, 226);
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .link-menu:active {
-    color: rgba(150, 147, 147, 0.623);
-    text-decoration: underline;
+  color: rgba(150, 147, 147, 0.623);
+  text-decoration: underline;
 }
 
 .hamburguesa {
-    color: rgba(150, 147, 147, 0.623);
-    border: 0.5px solid rgba(150, 147, 147, 0.623);
-
+  color: rgba(150, 147, 147, 0.623);
+  border: 0.5px solid rgba(150, 147, 147, 0.623);
 }
-
-
-
-/* =========================
-   MAIN
-   ========================= */
 
 main h1 {
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  text-align: center;
+  padding: 2rem;
 }
-
-
-/* =========================
-   HERO
-   ========================= */
 
 .hero {
-    width: 50%;
-    margin: 2rem auto;
-    background-image: linear-gradient(rgba(92, 126, 143, 0.75),
-            rgba(92, 126, 143, 0.75)),
-        url("../img/imagenpromo.jfif");
-
-    background-size: cover;
-    background-position: center;
-
-    color: rgb(245, 238, 238);
-
-    min-height: 100px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 2rem;
-    text-align: center;
-
-    border-radius: 8px;
+  width: 50%;
+  margin: 2rem auto;
+  background-image: linear-gradient(rgba(92, 126, 143, 0.75), rgba(92, 126, 143, 0.75)), url("../img/imagenpromo.jfif");
+  background-size: cover;
+  background-position: center;
+  color: rgb(245, 238, 238);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
 }
-
-
-
 .hero h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-
 .hero a {
-    text-decoration: none;
-    color: rgb(92, 126, 143);
-    font-weight: 400;
-    background-color: rgb(212, 221, 226);
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: 1px solid rgb(162, 162, 162);
+  text-decoration: none;
+  color: rgb(92, 126, 143);
+  font-weight: 400;
+  background-color: rgb(212, 221, 226);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(162, 162, 162);
 }
-
 .hero a:visited {
-    color: rgba(150, 147, 147, 0.623);
+  color: rgba(150, 147, 147, 0.623);
 }
-
 .hero a:hover {
-    color: rgb(76, 120, 143);
-    background-color: rgba(144, 145, 146, 0.582);
-    border-radius: 5px;
+  color: rgb(92, 126, 143);
+  background-color: rgba(144, 145, 146, 0.582);
 }
-
 .hero a:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-/* =========================
-   FOOTER
-   ========================= */
-
-footer {
-    background-color: rgb(245, 238, 238);
-    color: rgb(92, 126, 143);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1rem 2rem;
-}
-
-footer h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-footer ul {
-    display: flex;
-    align-items: center;
-
-    gap: 1rem;
-    list-style: none;
-}
-
-footer li {
-    display: flex;
-    align-items: center;
-
-    gap: 0.3rem;
-}
-
-footer li a:visited {
-    color: rgba(150, 147, 147, 0.623);
-}
-
-footer li a:hover {
-    color: rgba(150, 147, 147, 0.623);
-    background-color: rgb(212, 221, 226);
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-
-footer li a:active {
-    color: rgba(150, 147, 147, 0.623);
-    text-decoration: underline;
-}
-
-footer img {
-    width: 25px;
-    height: 25px;
-}
-
-footer a {
-    text-decoration: none;
-    color: rgb(92, 126, 143);
-    font-weight: 400;
-    transition: all 0.3s;
-}
-
-
-/* =========================
-   TARJETAS 
-   ========================= */
 .tarjetas {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5rem;
 }
 
 .tarjeta {
-    background-color: rgb(245, 238, 238);
-    color: rgb(92, 126, 143);
-
-    border: 1px solid rgb(162, 162, 162);
-    border-radius: 8px;
-
-    padding: 1rem;
-    text-align: center;
-
-    overflow: hidden;
-    height: 100%;
+  background-color: rgb(245, 238, 238);
+  color: rgb(92, 126, 143);
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
 }
-
 .tarjeta h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
-
 .tarjeta img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
 }
-
-
 .tarjeta figcaption {
-    padding: 1rem 0 0.5rem;
+  padding: 1rem 0 0.5rem;
 }
 
+main h1 {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  text-align: center;
+  padding: 2rem;
+}
 
-/* =========================
-   GALERÍA
-   ========================= */
+.hero {
+  width: 50%;
+  margin: 2rem auto;
+  background-image: linear-gradient(rgba(92, 126, 143, 0.75), rgba(92, 126, 143, 0.75)), url("../img/imagenpromo.jfif");
+  background-size: cover;
+  background-position: center;
+  color: rgb(245, 238, 238);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+.hero a {
+  text-decoration: none;
+  color: rgb(92, 126, 143);
+  font-weight: 400;
+  background-color: rgb(212, 221, 226);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(162, 162, 162);
+}
+.hero a:visited {
+  color: rgba(150, 147, 147, 0.623);
+}
+.hero a:hover {
+  color: rgb(92, 126, 143);
+  background-color: rgba(144, 145, 146, 0.582);
+}
+.hero a:active {
+  text-decoration: underline;
+}
+
+.tarjetas {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarjeta {
+  background-color: rgb(245, 238, 238);
+  color: rgb(92, 126, 143);
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+}
+.tarjeta h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.tarjeta figcaption {
+  padding: 1rem 0 0.5rem;
+}
+
+footer {
+  background-color: rgb(245, 238, 238);
+  color: rgb(92, 126, 143);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 1rem 2rem;
+}
+footer h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+footer li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+footer li a {
+  text-decoration: none;
+  color: rgb(92, 126, 143);
+  font-weight: 400;
+  transition: all 0.3s;
+}
+footer li a:visited {
+  color: rgba(150, 147, 147, 0.623);
+}
+footer li a:hover {
+  color: rgba(150, 147, 147, 0.623);
+  background-color: rgb(212, 221, 226);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+footer li a:active {
+  color: rgba(150, 147, 147, 0.623);
+  text-decoration: underline;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+}
+
 .nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.nosotros figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.nosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .nosotros {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 250px 250px;
     gap: 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
+  }
 }
 
-.nosotros figure {
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.nosotros img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 .escritorio {
-    display: none;
+  display: none;
 }
 
 .movil {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .movil {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .escritorio {
     display: block;
+  }
 }
-
-
-/* =========================
-   HISTORIA
-   ========================= */
-.historia {
-    max-width: 1000px;
-    margin: 0 auto;
-
-    padding: 2.5rem;
-
-}
-
-.historia h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-weight: 500;
-}
-
-.historia p {
-    line-height: 1.8;
-    margin-bottom: 1rem;
-}
-
-.accordion {
-    max-width: 900px;
-    margin: 2rem auto;
-}
-
-.accordion-item {
-    background-color: rgb(245, 238, 238);
-    border: 1px solid rgb(162, 162, 162);
-}
-
-.accordion-button {
-    background-color: rgb(245, 238, 238);
-    color: rgb(92, 126, 143);
-
-    font-weight: 500;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: rgb(92, 126, 143);
-    color: rgb(245, 238, 238);
-
-    box-shadow: none;
-}
-
-.accordion-button:focus {
-    box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
-}
-
-.accordion-body {
-    background-color: rgb(245, 238, 238);
-    color: rgb(92, 126, 143);
-
-    line-height: 1.7;
-}
-
-/* =========================
-   CONTACTO
-   ========================= */
 
 .contacto {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  align-items: start;
 }
-
 .contacto form {
-    background-color: rgb(245, 238, 238);
-    border: 1px solid rgb(162, 162, 162);
-    border-radius: 10px;
-    padding: 2rem;
+  background-color: rgb(245, 238, 238);
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 10px;
+  padding: 2rem;
 }
-
 .contacto fieldset {
-    border: none;
+  border: none;
 }
-
 .contacto legend {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
-
 .contacto label {
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.4rem;
-    font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 400;
 }
-
 .contacto input,
 .contacto textarea {
-    width: 100%;
-    padding: 0.7rem;
-
-    border: 1px solid rgb(162, 162, 162);
-    border-radius: 5px;
-
-    background-color: white;
-
-    font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
 }
-
 .contacto input:focus,
 .contacto textarea:focus {
-    outline: none;
-    border-color: rgb(92, 126, 143);
-    box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
+  outline: none;
+  border-color: rgb(92, 126, 143);
+  box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
 }
-
 .contacto textarea {
-    resize: vertical;
+  resize: vertical;
 }
-
 .contacto button {
-    margin-top: 1.5rem;
-    padding: 0.7rem 1.5rem;
-
-    border: none;
-    border-radius: 5px;
-
-    background-color: rgb(92, 126, 143);
-    color: rgb(245, 238, 238);
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-
-    cursor: pointer;
-    transition: 0.3s ease;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(92, 126, 143);
+  color: rgb(245, 238, 238);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-
 .contacto button:hover {
-    background-color: rgb(76, 105, 120);
-    transform: translateY(-2px);
+  background-color: rgb(76, 105, 120);
+  transform: translateY(-2px);
 }
 
 .mapa iframe {
-    width: 100%;
-    height: 500px;
-
-    border: 0;
-    border-radius: 10px;
+  width: 100%;
+  height: 500px;
+  border: 0;
+  border-radius: 10px;
 }
 
+.historia {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+.historia h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.historia p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
 
-/* =========================
-   MEDIA QUERIES
-   ========================= */
+.accordion {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: rgb(245, 238, 238);
+  border: 1px solid rgb(162, 162, 162);
+}
+.accordion-button {
+  background-color: rgb(245, 238, 238);
+  color: rgb(92, 126, 143);
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgb(92, 126, 143);
+  color: rgb(245, 238, 238);
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
+}
+.accordion-body {
+  background-color: rgb(245, 238, 238);
+  color: rgb(92, 126, 143);
+  line-height: 1.7;
+}
 
 @media (max-width: 767px) {
+  .contacto {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .contacto form {
+    padding: 1.5rem;
+  }
+}
 
-    .contacto {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-
-    .contacto form {
-        padding: 1.5rem;
-    }
-
-    .mapa iframe {
-        height: 350px;
-    }
-
+@media (max-width: 767px) {
+  .mapa iframe {
+    height: 350px;
+  }
 }
 
 @media (min-width: 768px) {
-
-    .nosotros {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 280px 280px 280px;
-        grid-template-areas:
-            "vertical cuadrada1"
-            "vertical cuadrada2"
-            "horizontal horizontal";
-    }
-
-    .escritorio {
-        display: block;
-    }
-
-    .movil {
-        display: none;
-    }
-
-    .foto-vertical {
-        grid-area: vertical;
-    }
-
-    .foto-cuadrada1 {
-        grid-area: cuadrada1;
-    }
-
-    .foto-cuadrada2 {
-        grid-area: cuadrada2;
-    }
-
-    .foto-horizontal {
-        grid-area: horizontal;
-    }
-
-
+  .nosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 280px 280px;
+    grid-template-areas: "vertical cuadrada1" "vertical cuadrada2" "horizontal horizontal";
+  }
 }
-
-
 @media (min-width: 1024px) {
-
-    .nosotros {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 280px 280px;
-        grid-template-areas:
-            "vertical cuadrada1 cuadrada2"
-            "horizontal horizontal horizontal";
-    }
-
-    .nosotros figure:focus {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
-    }
-
-
-
+  .nosotros {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 280px 280px;
+    grid-template-areas: "vertical cuadrada1 cuadrada2" "horizontal horizontal horizontal";
+  }
+  .nosotros figure:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
+  }
 }
+
+.escritorio {
+  display: none;
+}
+@media (min-width: 768px) {
+  .escritorio {
+    display: block;
+  }
+}
+
+.movil {
+  display: block;
+}
+@media (min-width: 768px) {
+  .movil {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .foto-vertical {
+    grid-area: vertical;
+  }
+}
+
+@media (min-width: 768px) {
+  .foto-cuadrada1 {
+    grid-area: cuadrada1;
+  }
+}
+
+@media (min-width: 768px) {
+  .foto-cuadrada2 {
+    grid-area: cuadrada2;
+  }
+}
+
+@media (min-width: 768px) {
+  .foto-horizontal {
+    grid-area: horizontal;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

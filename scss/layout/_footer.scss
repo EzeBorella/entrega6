@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+footer {
+    background-color: $color-claro2;
+    color: $color-oscuro;
+
+    @include flex(row, space-between, center, 0);
+
+    padding: 1rem 2rem;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    ul {
+        @include flex(row, null, center, 1rem);
+        list-style: none;
+    }
+
+    li {
+        @include flex(row, null, center, 0.3rem);
+
+        a {
+            text-decoration: none;
+            color: $color-oscuro;
+            font-weight: 400;
+            transition: all 0.3s;
+
+            &:visited {
+                color: rgba(150, 147, 147, 0.623);
+            }
+
+            &:hover {
+                color: rgba(150, 147, 147, 0.623);
+                background-color: $color-claro;
+                border-radius: 5px;
+                padding: 0.5rem;
+            }
+
+            &:active {
+                color: rgba(150, 147, 147, 0.623);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}

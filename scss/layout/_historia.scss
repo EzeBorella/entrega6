@@ -1,0 +1,52 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+@use "../utilities/extend" as *;
+
+.historia {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    p {
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+}
+
+.accordion {
+    max-width: 900px;
+    margin: 2rem auto;
+
+    &-item {
+        background-color: $color-claro2;
+        border: 1px solid $color-inter;
+    }
+
+    &-button {
+        background-color: $color-claro2;
+        color: $color-oscuro;
+        font-weight: 500;
+
+        &:not(.collapsed) {
+            background-color: $color-oscuro;
+            color: $color-claro2;
+            box-shadow: none;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px rgba(92, 126, 143, 0.2);
+        }
+    }
+
+    &-body {
+        background-color: $color-claro2;
+        color: $color-oscuro;
+        line-height: 1.7;
+    }
+}

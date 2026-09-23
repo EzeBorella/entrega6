@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+
+header {
+    @extend %barras;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.link-menu {
+    @extend %lista-barras;
+}
+
+.link-menu:visited {
+    color: rgba(150, 147, 147, 0.623);
+}
+
+.link-menu:hover {
+    color: rgba(150, 147, 147, 0.623);
+    background-color: $color-claro;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.link-menu:active {
+    color: rgba(150, 147, 147, 0.623);
+    text-decoration: underline;
+}
+
+.hamburguesa {
+    color: rgba(150, 147, 147, 0.623);
+    border: 0.5px solid rgba(150, 147, 147, 0.623);
+}
