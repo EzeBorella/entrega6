@@ -9,7 +9,36 @@ main {
         text-align: center;
         padding: 2rem;
     }
+
+    @keyframes halo {
+        0% {
+            box-shadow: none;
+        }
+
+        50% {
+            box-shadow: 0 0 15px 15px $color-oscuro;
+        }
+
+        100% {
+            box-shadow: none;
+        }
+    }
+
+    @keyframes luz-boton {
+        0% {
+            box-shadow: none;
+        }
+
+        50% {
+            box-shadow: 0 0 15px 15px $color-claro;
+        }
+
+        100% {
+            box-shadow: none;
+        }
+    }
 }
+
 
 .hero {
     width: 50%;
@@ -26,11 +55,17 @@ main {
     color: $color-claro2;
     min-height: 100px;
 
-    @include flex(column, center, center, 0);
+    @include flex(column, center, center, 10px);
 
     padding: 2rem;
     text-align: center;
     border-radius: 8px;
+
+    animation-name: halo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+
 
     h2 {
         font-size: 2rem;
@@ -45,6 +80,9 @@ main {
         padding: 0.5rem 1rem;
         border-radius: 5px;
         border: 1px solid $color-inter;
+        transition: 0.5s;
+        animation: luz-boton 2s ease-out;
+        animation-delay: 1s;
 
         &:visited {
             color: rgba(150, 147, 147, 0.623);
@@ -53,106 +91,12 @@ main {
         &:hover {
             color: $color-oscuro;
             background-color: rgba(144, 145, 146, 0.582);
+            transform: $hover;
         }
 
         &:active {
             text-decoration: underline;
+            transform: $active;
         }
-    }
-}
-
-main {
-    h1 {
-        font-size: 2.5rem;
-        @include flex(row, center, center, 0);
-        text-align: center;
-        padding: 2rem;
-    }
-}
-
-.hero {
-    width: 50%;
-    margin: 2rem auto;
-
-    background-image:
-        linear-gradient(rgba(92, 126, 143, 0.75),
-            rgba(92, 126, 143, 0.75)),
-        $fondo;
-
-    background-size: cover;
-    background-position: center;
-
-    color: $color-claro2;
-    min-height: 100px;
-
-    @include flex(column, center, center, 0);
-
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    a {
-        text-decoration: none;
-        color: $color-oscuro;
-        font-weight: 400;
-        background-color: $color-claro;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        border: 1px solid $color-inter;
-
-        &:visited {
-            color: rgba(150, 147, 147, 0.623);
-        }
-
-        &:hover {
-            color: $color-oscuro;
-            background-color: rgba(144, 145, 146, 0.582);
-        }
-
-        &:active {
-            text-decoration: underline;
-        }
-    }
-}
-
-
-.tarjetas {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.tarjeta {
-    background-color: $color-claro2;
-    color: $color-oscuro;
-
-    border: 1px solid $color-inter;
-    border-radius: 8px;
-
-    padding: 1rem;
-    text-align: center;
-
-    overflow: hidden;
-    height: 100%;
-
-    h2 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-    }
-
-    img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-
-    figcaption {
-        padding: 1rem 0 0.5rem;
     }
 }

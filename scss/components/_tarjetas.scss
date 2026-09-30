@@ -1,17 +1,16 @@
-
 @use "../utilities/extend" as *;
 @use "../utilities/variables" as *;
 @use "../utilities/mixin" as *;
 
 .tarjetas {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
-
+    @include grid(repeat(1, 2fr), auto, 20px);
+    max-width: 800px;
+    margin: 2rem auto;
+    
 }
 
 .tarjeta {
-    background-color: $color-claro2;
+    background: linear-gradient($color-claro, $color-oscuro);
     color: $color-oscuro;
 
     border: 1px solid $color-inter;
@@ -29,19 +28,21 @@
     }
 
     img {
+        display: block;
         width: 100%;
         height: 250px;
         object-fit: cover;
         border-radius: 5px;
+        transition: 2seg;
+            &:hover{
+                scale: (1.1);
+            }
     }
 
     p {
         padding: 1rem 0 0.5rem;
+        margin: 0;
     }
-}
-    figcaption {
-        padding: 1rem 0 0.5rem;
-    }
-}
 
+}
 

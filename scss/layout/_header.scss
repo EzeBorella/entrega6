@@ -16,17 +16,21 @@ header {
 .link-menu:visited {
     color: rgba(150, 147, 147, 0.623);
 }
-
+.navbar-nav{
+    perspective: 100px;
+}
 .link-menu:hover {
     color: rgba(150, 147, 147, 0.623);
     background-color: $color-claro;
     border-radius: 5px;
     padding: 0.5rem;
+    transform: $hover;
 }
 
 .link-menu:active {
     color: rgba(150, 147, 147, 0.623);
     text-decoration: underline;
+    transform: $active;
 }
 
 .hamburguesa {
