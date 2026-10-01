@@ -77,7 +77,7 @@ main h1 {
     box-shadow: none;
   }
   50% {
-    box-shadow: 0 0 15px 15px rgb(92, 126, 143);
+    box-shadow: 0 0 5px 5px rgb(92, 126, 143);
   }
   100% {
     box-shadow: none;
@@ -88,7 +88,7 @@ main h1 {
     box-shadow: none;
   }
   50% {
-    box-shadow: 0 0 15px 15px rgb(212, 221, 226);
+    box-shadow: 0 0 5px 5px rgb(212, 221, 226);
   }
   100% {
     box-shadow: none;
@@ -321,7 +321,7 @@ footer img {
 .historia {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 .historia h2 {
   text-align: center;
@@ -465,7 +465,7 @@ footer img {
   height: 250px;
   object-fit: cover;
   border-radius: 5px;
-  transition: 2seg;
+  transition: transform 2s;
 }
 .tarjeta img:hover {
   scale: 1.1;

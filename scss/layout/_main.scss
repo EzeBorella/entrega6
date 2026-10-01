@@ -7,7 +7,7 @@ main {
         font-size: 2.5rem;
         @include flex(row, center, center, 0);
         text-align: center;
-        padding: 2rem;
+        padding: $padding;
     }
 
     @keyframes halo {
@@ -16,7 +16,7 @@ main {
         }
 
         50% {
-            box-shadow: 0 0 15px 15px $color-oscuro;
+            box-shadow: 0 0 5px 5px $color-oscuro;
         }
 
         100% {
@@ -30,7 +30,7 @@ main {
         }
 
         50% {
-            box-shadow: 0 0 15px 15px $color-claro;
+            box-shadow: 0 0 5px 5px $color-claro;
         }
 
         100% {

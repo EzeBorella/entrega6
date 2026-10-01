@@ -33,7 +33,7 @@
         height: 250px;
         object-fit: cover;
         border-radius: 5px;
-        transition: 2seg;
+        transition: transform 2s;
             &:hover{
                 scale: (1.1);
             }

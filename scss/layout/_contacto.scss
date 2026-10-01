@@ -6,7 +6,7 @@
 .contacto {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: $padding;
 
     @include grid(1fr 1fr, auto, 2rem);
 
@@ -16,7 +16,7 @@
         background-color: $color-claro2;
         border: 1px solid $color-inter;
         border-radius: 10px;
-        padding: 2rem;
+        padding: $padding;
     }
 
     fieldset {
@@ -78,6 +78,7 @@
         &:hover {
             background-color: rgb(76, 105, 120);
             transform: translateY(-2px);
+            
         }
     }
 }
