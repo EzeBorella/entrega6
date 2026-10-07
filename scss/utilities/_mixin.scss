@@ -1,0 +1,34 @@
+// Flex
+
+@mixin flex($direccion, $justificar, $alinear, $gap) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificar;
+    align-items: $alinear;
+    gap: $gap;
+}
+
+// Grid
+
+@mixin grid($columnas, $filas, $gap) {
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    gap: $gap;
+}
+
+// Tablet
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// Escritorio
+
+@mixin escritorio {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}

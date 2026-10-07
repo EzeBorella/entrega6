@@ -1,0 +1,19 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+%barras {
+    background-color: $color-claro2;
+    color: $color-oscuro;
+}
+
+%lista-barras {
+    @include flex(null, null, null, 1.5rem);
+
+    list-style: none;
+    color: $color-oscuro;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+

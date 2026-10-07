@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+body {
+    font-family: $fuente;
+    font-weight: 100;
+    font-style: normal;
+    background-color: $color-claro;
+    color: $color-oscuro;
+}
+
+img {
+    max-width: 100%;
+}

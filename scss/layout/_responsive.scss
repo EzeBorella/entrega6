@@ -1,0 +1,89 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/variables" as *; 
+
+.contacto {
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+
+        form {
+            padding: 1.5rem;
+        }
+    }
+}
+
+.mapa {
+    @media (max-width: 767px) {
+        iframe {
+            height: 350px;
+        }
+    }
+}
+
+.nosotros {
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px 280px;
+
+        grid-template-areas:
+            "vertical cuadrada1"
+            "vertical cuadrada2"
+            "horizontal horizontal";
+    }
+
+    @include escritorio {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 280px 280px;
+
+        grid-template-areas:
+            "vertical cuadrada1 cuadrada2"
+            "horizontal horizontal horizontal";
+
+        figure {
+            &:focus {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
+            }
+        }
+    }
+}
+
+.escritorio {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.movil {
+    display: block;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.foto-vertical {
+    @include tablet {
+        grid-area: vertical;
+    }
+}
+
+.foto-cuadrada1 {
+    @include tablet {
+        grid-area: cuadrada1;
+    }
+}
+
+.foto-cuadrada2 {
+    @include tablet {
+        grid-area: cuadrada2;
+    }
+}
+
+.foto-horizontal {
+    @include tablet {
+        grid-area: horizontal;
+    }
+}

@@ -1,0 +1,102 @@
+@use "../utilities/extend" as *;
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+main {
+    h1 {
+        font-size: 2.5rem;
+        @include flex(row, center, center, 0);
+        text-align: center;
+        padding: $padding;
+    }
+
+    @keyframes halo {
+        0% {
+            box-shadow: none;
+        }
+
+        50% {
+            box-shadow: 0 0 5px 5px $color-oscuro;
+        }
+
+        100% {
+            box-shadow: none;
+        }
+    }
+
+    @keyframes luz-boton {
+        0% {
+            box-shadow: none;
+        }
+
+        50% {
+            box-shadow: 0 0 5px 5px $color-claro;
+        }
+
+        100% {
+            box-shadow: none;
+        }
+    }
+}
+
+
+.hero {
+    width: 50%;
+    margin: 2rem auto;
+
+    background-image:
+        linear-gradient(rgba(92, 126, 143, 0.75),
+            rgba(92, 126, 143, 0.75)),
+        $fondo;
+
+    background-size: cover;
+    background-position: center;
+
+    color: $color-claro2;
+    min-height: 100px;
+
+    @include flex(column, center, center, 10px);
+
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+
+    animation-name: halo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-oscuro;
+        font-weight: 400;
+        background-color: $color-claro;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: 1px solid $color-inter;
+        transition: 0.5s;
+        animation: luz-boton 2s ease-out;
+        animation-delay: 1s;
+
+        &:visited {
+            color: rgba(150, 147, 147, 0.623);
+        }
+
+        &:hover {
+            color: $color-oscuro;
+            background-color: rgba(144, 145, 146, 0.582);
+            transform: $hover;
+        }
+
+        &:active {
+            text-decoration: underline;
+            transform: $active;
+        }
+    }
+}
